@@ -1,0 +1,21 @@
+<% include ./partials/header2 %>
+<div style="background-color: white; background-size: 100% 100%; background-repeat: no-repeat;">
+  <h2 style="margin-left: 60px;">Hello <%= currentUser.username %>.. want to ask something?</h2>
+  <div class="templatemo-content-container">
+  <div class="templatemo-flex-row flex-content-row">
+  <div class="templatemo-content-widget white-bg col-2">
+  <div>
+    <p id="chatlog7" class="chatlog">&nbsp;</p>
+    <p id="chatlog6" class="chatlog">&nbsp;</p>
+    <p id="chatlog5" class="chatlog">&nbsp;</p>
+    <p id="chatlog4" class="chatlog">&nbsp;</p>
+    <p id="chatlog3" class="chatlog">&nbsp;</p>
+    <p id="chatlog2" class="chatlog">&nbsp;</p>
+    <p id="chatlog1" class="chatlog">&nbsp;</p>
+    <input type="text" name="chat" id="chatbox" placeholder="Hi there! Type here to talk to me." onfocus="placeHolder()">
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+<% include ./partials/footer2 %>

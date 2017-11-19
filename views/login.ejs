@@ -1,0 +1,33 @@
+<% include ./partials/header %>
+<div class="templatemo-content-widget templatemo-login-widget white-bg">
+			<header class="text-center">
+	          <h1>Login</h1>
+	        </header>
+	        <form action="/login" method="POST" class="templatemo-login-form">
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>	        		
+		              	<input type="text" class="form-control" name="username" placeholder="username">           
+		          	</div>	
+	        	</div>
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-key fa-fw"></i></div>	        		
+		              	<input type="password" class="form-control" name="password" placeholder="******">           
+		          	</div>	
+	        	</div>	          	
+				<div class="form-group">
+					<button type="submit" class="templatemo-blue-button width-100">Login</button>
+				</div>
+	        </form>
+	        
+	        <% if(messages){ %>
+                <div class="alert alert-danger" role="alert">
+                    <strong></strong> <%=messages%>
+                </div>
+            <% } %>
+		</div>
+		<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
+			<p>Not a registered user yet? <strong><a href="/register" class="blue-text">Sign up now!</a></strong></p>
+		</div>
+<% include ./partials/footer %>

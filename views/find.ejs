@@ -1,0 +1,28 @@
+<% include ./partials/header2 %> 
+<div style="background-image: url('https://images.pexels.com/photos/161593/baby-child-kid-girl-161593.jpeg?w=940&h=650&auto=compress&cs=tinysrgb'); background-size: 100% 100%; background-repeat: no-repeat;">
+        <div class="templatemo-content-container">
+          <div class="templatemo-flex-row flex-content-row">
+            <div class="templatemo-content-widget white-bg col-2">
+            <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+            <% doctor.forEach(function(doctor){%>
+                <div class="col-md-3 col-sm-6">
+                    <div class="thumbnail">
+                        <img src="<%= doctor.image%>">
+                        <div class="caption">
+                           <h5><%= doctor.name %></h5>
+                           <h5><%= doctor.degree %></h5>
+                           <h5><%= doctor.fee %></h5>
+                        </div>
+                        <p>
+                            <a href="/appointment/<%= doctor._id%>" class="btn btn-primary">Book Appointment</a>
+                        </p>
+                    </div>
+                    
+                </div>
+            <% }); %>
+            </div>
+            </div>
+          </div>
+        </div>
+        </div>
+<% include ./partials/footer2 %> 

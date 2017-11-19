@@ -1,0 +1,73 @@
+<% include ./partials/header2 %> 
+<div style="background-image: url('https://static.pexels.com/photos/220574/pexels-photo-220574.jpeg'); background-size: 100% 100%; background-repeat: no-repeat;">
+<div class="templatemo-content-widget templatemo-login-widget white-bg">
+			<header class="text-center">
+	          <h1>Apply for Birth Certificate</h1>
+	        </header>
+	        <form action="/certificate" method="POST" class="templatemo-login-form">
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+		              	<input type="text" class="form-control" name="childname" placeholder="child name">           
+		          	</div>	
+	        	</div>
+	            <div class="form-group">
+	        		<div class="input-group">
+							<div>
+								<select class="form-dropdown form-input form-control" name="gender" required>
+									<option value="">Gender</option>
+									<option value="Male"> Male </option>
+									<option value="Female"> Female </option>
+								</select>
+							</div>
+		          	</div>	
+	        	</div>
+	            <div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+		              	<input type="date" class="form-control" name="dob" placeholder="date of birth">           
+		          	</div>	
+	        	</div>
+	            <div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+		              	<input type="text" class="form-control" name="fathersname" placeholder="fathers name">           
+		          	</div>	
+	        	</div>
+	            <div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+		              	<input type="text" class="form-control" name="mobilenumber" placeholder="Mobile Number">           
+		          	</div>	
+	        	</div>
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-key fa-fw"></i></div>	        		
+		              	<textarea rows="6" cols="60" class="form-control" name="address" placeholder="address"></textarea>           
+		          	</div>	
+	        	</div>	   
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+		              	<input type="text" class="form-control" name="fathersoccupation" placeholder="fathers-occupation">           
+		          	</div>	
+	        	</div>
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+		              	<input type="text" class="form-control" name="placeofbirth" placeholder="place-of-birth">           
+		          	</div>	
+	        	</div>	        	
+	        	<div class="form-group">
+	        		<div class="input-group">
+		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>
+		              	<input type="text" class="form-control" name="nameofhospital" placeholder="name of hospital">           
+		          	</div>	
+	        	</div>
+				<div class="form-group">
+					<button type="submit" class="templatemo-blue-button width-100">Submit</button>
+				</div>
+	        </form>
+		</div>
+		</div>
+<% include ./partials/footer2 %> 

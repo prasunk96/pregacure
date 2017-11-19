@@ -1,0 +1,87 @@
+<% include ./partials/header2 %>    
+<div style="background-image: url('https://images.pexels.com/photos/654642/pexels-photo-654642.jpeg?w=940&h=650&auto=compress&cs=tinysrgb'); background-size: 100% 100%; background-repeat: no-repeat;">
+        <div class="templatemo-content-container">
+          <div class="templatemo-flex-row flex-content-row">
+            <div class="templatemo-content-widget white-bg col-2">
+              <i class="fa fa-times"></i>
+              <h2 class="templatemo-inline-block">Profile</h2><hr>
+              <form>
+                <div class="form-group">
+                <label class="col-md-3 control-label">First Name:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.username %>">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-md-3 control-label">last Name:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.lastname %>">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-md-3 control-label">Password:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.password %>">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-md-3 control-label">Email:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.email %>">
+                </div>
+                </div>  
+                <div class="form-group">
+                <label class="col-md-3 control-label">Mobile:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.phone %>">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-md-3 control-label">Blood Group:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.bg %>">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-md-3 control-label">Age:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.age %>">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-md-3 control-label">Address:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.address %>">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-md-3 control-label">Month:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.month %>">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-md-3 control-label">City:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.city %>">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-md-3 control-label">State:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.State %>">
+                </div>
+                </div>
+                <div class="form-group">
+                <label class="col-md-3 control-label">Doctor:</label>
+                <div class="col-md-8">
+                  <input class="form-control" type="text" value="<%= currentUser.doctor %>">
+                </div>
+                </div>
+              </form>
+          </div>
+            </div>
+          </div>
+        </div>
+<hr>
+<% include ./partials/footer2 %>
